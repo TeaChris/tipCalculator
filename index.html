@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    
+    <div class="mainContainer">
+
+        <main>
+        
+            <h3>Tip Calculator</h3>
+            
+
+            <!-- =============== BILL ================= -->
+            <h6 class="bill">Bill</h6>
+            <div class="container">
+                <div class="bill">
+                    <span>$</span>
+                    <input type="text" placeholder="0.00" onkeyup="calculateBill()" id="billTotalInput">
+                </div>
+            </div>
+
+
+            <!-- =============== TIP ================= -->
+            <h6 class="tip">Tip</h6>
+            <div class="container">
+                <div class="tip">
+                    <span>%</span>
+                    <input type="text" placeholder="0.00" onkeyup="calculateBill()" id="tipInput">
+                </div>
+            </div>
+
+
+            <!-- =============== NUMBER OF PEOPLE ================= -->
+            <h6 class="people">Number Of People</h6>
+            <div class="btnContainer">
+                <div class="btns">
+                    <button  onclick="decreasePeople()">
+                        <span class="btnText">-</span>
+                    </button>
+                    <div class="peopleCount">
+                        <span id="numberOfPeople">1</span>
+                    </div>
+                    <button  onclick="increasePeople()">
+                        <span class="btnText">+</span>
+                    </button>
+                </div>
+            </div>
+
+        </main>
+
+
+
+
+
+
+        <!-- ================================= ASIDE ================================= -->
+        <aside>
+
+            <div class="asideContainer">
+
+                <div class="billAmount">
+                    <span>Bill Amount</span>
+                    <span id="billAmount">$0.00</span>
+                </div>
+
+                <div class="grandTotal">
+                    <span>Amt/Person</span>
+                    <span  id="grandTotal">$0.00</span>
+                </div>
+
+                <div class="tipTotal">
+                    <span>Tip Total</span>
+                    <span id="tipTotal">$0.00</span>
+                </div>
+
+                <div class="tipPerPerson">
+                    <span>Tip / Person</span>
+                    <span id="tipPerson">$0.00</span>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="/index.js"></script>
+</body>
+</html>

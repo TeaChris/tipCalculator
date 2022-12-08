@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap');
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #115173;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+h6.bill{
+    color: #115173;
+    font-size: 1.4rem;
+    margin: 2rem 0 0.7rem 2rem;
+}
+
+h6.tip{
+    color: #115173;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.7rem 2rem;
+}
+
+h6.people{
+    color: #115173;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.7rem 2rem;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 3rem;
+    /* align-items: center;
+    justify-content: space-around; */
+    background: #022c43;
+    width: 65vw;
+    height: 65vh;
+    margin: 7.6rem auto;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+main{
+    margin-left: 1rem;
+}
+
+main h3{
+    color: #115173;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+.container{
+    position: relative;
+    width: 23rem;
+    height: 3rem;
+    background: #115173;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.6rem 1rem;
+    border-radius: 1.2rem;
+    color: #022c43;
+    margin-left: 1rem;
+}
+
+.container > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container input{
+    color: #022c43;
+    background: transparent;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.container span{
+    font-size: 2rem;
+}
+
+
+.btnContainer > div{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 1.5rem 0 0 2rem;
+}
+
+.btns button{
+    background: #115173;
+    color: #022c43;
+    width: 4rem;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+}
+
+.btns .peopleCount{
+    font-size: 2rem;
+    color: #115173;
+}
+
+
+/* ========================== ASIDE ============================== */
+
+aside{
+    background: #115173;
+    width: 25rem;
+    aspect-ratio: 1/1;
+    margin: 1.5rem 1rem 1rem;
+    border-radius: 1.2rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+aside > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #022c43;
+    font-weight: 900;
+    margin: 1rem 0 0 2rem;
+}
+
+.billAmount{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.billAmount span:last-child{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.grandTotal{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.grandTotal span:last-child{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.tipTotal{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.tipTotal span:last-child{
+    font-size: 2rem;
+    margin: 0 1.5rem 0 2rem;
+}
+
+.tipPerPerson{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.tipPerPerson span:last-child{
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* media query (tabs) */
+@media screen and (max-width: 1024px) {
+    .mainContainer{
+        width: 90vw;
+        height: 80vh;
+        margin: 4rem auto;
+    }
+
+    main h3{
+        padding-top: 2rem;
+    }
+
+    aside{
+        margin: 2.8rem 1rem 0;
+    }
+}
+
+/* media query (phones) */
+@media screen and (max-width: 600px) {
+    .mainContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    aside{
+        margin: 0 0 0 4.5rem;
+    }
+}
